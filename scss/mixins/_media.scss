@@ -1,0 +1,36 @@
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Usage:  @include media(size){ [styles here] }
+
+@mixin media($query){
+  // Mobile-only (Careful!)
+  @if $query == 'max-xs' {
+    @media (#{$bp-max-xs}) { @content; }
+  }
+
+  // Larger than mobile
+  @if $query == 'min-xs' {
+    @media (#{$bp-min-xs}) { @content; }
+  }
+
+  // Larger than phablet
+  @if $query == 'min-sm' {
+    @media (#{$bp-min-sm}) { @content; }
+  }
+
+  // Larger than tablet
+  @if $query == 'min-md' {
+    @media (#{$bp-min-md}) { @content; }
+  }
+
+  // Larger than desktop
+  @if $query == 'min-lg' {
+    @media (#{$bp-min-lg}) { @content; }
+  }
+
+  // Larger than Desktop HD
+  @if $query == 'min-xl' {
+    @media (#{$bp-min-xl}) { @content; }
+  }
+}

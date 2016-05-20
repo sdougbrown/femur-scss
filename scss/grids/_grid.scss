@@ -1,0 +1,70 @@
+/*
+* Femur Grid
+* Copyright 2016
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+%g,
+.g {
+  box-sizing: border-box;
+
+  @if grid-float == true {
+    display: block;
+    float: left;
+  } @else {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+.g-whole {
+  width: 100%;
+}
+.g-half,
+.g-fifty {
+  width: 50%;
+}
+.g-third {
+  width: 33.3%;
+}
+.g-twothirds {
+  width: 66.7%;
+}
+.g-quarter {
+  width: 25%;
+}
+.g-threequarters {
+  width: 75%;
+}
+.g-sixth {
+    width: 16.6%;
+}
+.g-eighth {
+    width: 12.5%;
+}
+.g-ninety {
+    width: 90%;
+}
+.g-eighty {
+    width: 80%;
+}
+.g-seventy {
+    width: 70%;
+}
+.g-sixty {
+    width: 60%;
+}
+.g-forty {
+    width: 40%;
+}
+.g-thirty {
+    width: 30%;
+}
+.g-twenty {
+    width: 20%;
+}
+.g-ten {
+    width: 10%;
+}

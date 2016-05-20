@@ -10,10 +10,10 @@ html {
 
 body {
   font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: $font-family;
-  color: $font-color;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  font-family: $base-font-family;
+  color: $base-font-color;
 }
 
 // Links
@@ -21,7 +21,8 @@ body {
 
 a {
   color: $link-color;
-  &:hover {
+  &:hover,
+  &:focus {
     color: darken($link-color, 5%);
   }
 }
@@ -29,9 +30,13 @@ a {
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$hr-border-width: 1px !default;
+$hr-border-style: solid !default;
+$hr-border-color: $light-grey !default;
+
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid $light-grey;
+  border-top: $hr-border-width $hr-border-style $hr-border-color;
 }

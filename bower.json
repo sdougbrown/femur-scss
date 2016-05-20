@@ -1,13 +1,15 @@
 {
-  "name": "Skeleton-Sass",
-  "version": "2.0.4",
-  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
+  "name": "femur-scss",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sdougbrown/femur-scss",
   "authors": [
+    "Doug Brown <femur@douggo.com>  (http://douggo.com/)",
     "Seth Coelen <scoelen89@gmail.com> (http://SethCoelen.com)"
   ],
-  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
-  "main": "scss/skeleton.scss",
+  "description": "An opinionated enhancement of Skeleton - responsive boilerplate and sassy best practices",
+  "main": "scss/femur.scss",
   "keywords": [
+    "femur",
     "skeleton",
     "sass",
     "scss",

@@ -1,0 +1,25 @@
+.o-container {
+  @extend %u-cf;
+  position: relative;
+  width: 100%;
+  max-width: $container-width;
+  margin: $container-margin;
+  padding: $container-padding;
+  box-sizing: border-box;
+}
+
+// For devices larger than 400px
+@include media('min-xs') {
+  .o-container {
+    width: $container-width-min-xs;
+    padding: $container-padding-min-xs;
+  }
+}
+
+// For devices larger than 550px
+@include media('min-sm') {
+  .o-container {
+    width: $container-width-min-sm;
+  }
+}
+
