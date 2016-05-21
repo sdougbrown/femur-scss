@@ -3,7 +3,7 @@
 
 // Usage:  @include media(size){ [styles here] }
 
-@mixin media($query){
+@mixin media ($query){
   // Mobile-only (Careful!)
   @if $query == 'max-xs' {
     @media (#{$bp-max-xs}) { @content; }

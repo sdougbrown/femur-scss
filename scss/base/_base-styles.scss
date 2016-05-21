@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
+  font-size: 1.5em;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
   font-family: $base-font-family;
@@ -19,19 +19,25 @@ body {
 // Links
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$link-hover-color: darken($link-color, 5%) !default;
+$link-focus-color: $link-hover-color !default;
+
 a {
   color: $link-color;
-  &:hover,
+
+  &:hover {
+    color: $link-hover-color;
+  }
   &:focus {
-    color: darken($link-color, 5%);
+    color: $link-focus-color;
   }
 }
 
 // Misc
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$hr-border-width: 1px !default;
-$hr-border-style: solid !default;
+$hr-border-width: $base-border-width !default;
+$hr-border-style: $base-border-style !default;
 $hr-border-color: $light-grey !default;
 
 hr {

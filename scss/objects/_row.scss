@@ -1,0 +1,33 @@
+$row-spacing: $base-spacing-unit * 2;
+$row-spacing-wide: $base-spacing-unit * 3;
+$row-spacing-tight: $base-spacing-unit;
+
+.o-row {
+  @extend %u-clearfix;
+  margin-left: -$row-spacing;
+
+  // adds spacing to all child grid elements
+  > .g {
+    padding-left: $row-spacing;
+  }
+}
+
+.o-row--wide {
+  @extend %u-clearfix;
+  margin-left: -$row-spacing-wide;
+
+  // adds spacing to all child grid elements
+  > .g {
+    padding-left: $row-spacing-wide;
+  }
+}
+§
+.o-row--tight {
+  @extend %u-clearfix;
+  margin-left: -$row-spacing-tight;
+
+  // adds spacing to all child grid elements
+  > .g {
+    padding-left: $row-spacing-tight;
+  }
+}

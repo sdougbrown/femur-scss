@@ -9,7 +9,7 @@
 .g {
   box-sizing: border-box;
 
-  @if grid-float == true {
+  @if $grid-float == true {
     display: block;
     float: left;
   } @else {

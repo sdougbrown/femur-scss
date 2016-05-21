@@ -5,25 +5,29 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-/* Base files. */
+// Core
 @import "vars";
 @import "mixins/base";
 
+// Base
 @import "base/normalize";
 @import "base/base-styles";
 @import "base/utils";
 @import "base/typography";
 
-/* Elements */
-@import "modules/buttons";
-@import "modules/forms";
-@import "modules/lists";
-@import "modules/code";
-@import "modules/tables";
-@import "modules/spacing";
+// Elements
+// Note: I don't reommend using these blindly.
+@import "elements/buttons";
+@import "elements/forms";
+@import "elements/lists";
+@import "elements/code";
+@import "elements/tables";
+@import "elements/spacing";
 
-/* Objects */
+// Objects
+@import "objects/buttons";
+@import "objects/container";
+@import "objects/row";
 
-
-/* Grid */
+// Grid
 @import "grids/base";

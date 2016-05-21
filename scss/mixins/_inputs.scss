@@ -1,0 +1,29 @@
+$input-height: $base-input-height !default;
+$input-bg: #fff !default;
+
+$input-v-padding: ($base-spacing-unit * 0.6) !default;
+$input-h-padding: $base-spacing-unit !default;
+
+$input-border-width: $base-border-width !default;
+$input-border-style: $base-border-style !default;
+$input-border-color: lighten($base-border-color, 8.8%) !default;
+
+$input-box-shadow: none !default;
+
+$input-focus-border-color: $primary-color !default;
+$input-focus-outline: 0 !default;
+
+@mixin input () {
+  box-sizing: border-box;
+  height: $input-height;
+  padding: $input-v-padding $input-h-padding;
+  background-color: $input-bg;
+  border: $input-border-width $input-border-style $input-border-color;
+  border-radius: $global-radius;
+  box-shadow: $input-box-shadow;
+}
+
+@mixin input-focus () {
+  border-color: $input-focus-border-color;
+  outline: $input-focus-outline;
+}

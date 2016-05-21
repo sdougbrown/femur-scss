@@ -1,18 +1,10 @@
-// Forms
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// Forms / Inputs
 
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
-  background-color: #fff;
-  border: 1px solid lighten($border-color, 8.8%);
-  border-radius: $global-radius;
-  box-shadow: none;
-  box-sizing: border-box;
+  @include input();
 }
 
-// Removes awkward default styles on some inputs for iOS
 input {
   &[type="email"],
   &[type="number"],
@@ -21,19 +13,21 @@ input {
   &[type="tel"],
   &[type="url"],
   &[type="password"] {
+    @include input();
+    // Removes awkward default styles on some inputs for iOS
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
   }
 }
 
+$textarea-min-height: 65px !default;
+
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  min-height: $textarea-min-height;
 }
 
 input {
@@ -44,15 +38,13 @@ input {
   &[type="tel"]:focus,
   &[type="url"]:focus,
   &[type="password"]:focus {
-    border: 1px solid $primary-color;
-    outline: 0;
+    @include input-focus();
   }
 }
 
 textarea:focus,
 select:focus {
-  border: 1px solid $primary-color;
-  outline: 0;
+  @include input-focus();
 }
 
 label,

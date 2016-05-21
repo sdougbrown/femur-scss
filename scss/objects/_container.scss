@@ -1,5 +1,5 @@
 .o-container {
-  @extend %u-cf;
+  @extend %u-clearfix;
   position: relative;
   width: 100%;
   max-width: $container-width;

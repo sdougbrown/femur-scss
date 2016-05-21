@@ -20,12 +20,16 @@
 }
 
 .u-clearfix,
-.u-fix,
 .u-cf,
+%u-clearfix,
 %u-cf {
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+.u-block {
+  display: block !important;
 }

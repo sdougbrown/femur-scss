@@ -1,0 +1,33 @@
+// Buttons
+
+%o-btn,
+.o-btn {
+  @include button();
+
+  &:hover {
+    @include button-hover();
+  }
+  &:focus {
+    @include button-focus();
+  }
+}
+
+// Visual Styles
+%o-btn--primary,
+.o-btn--primary {
+  @include button-primary();
+
+  &:hover {
+    @include button-primary-hover();
+  }
+  &:focus {
+    @include button-primary-focus();
+  }
+}
+
+// Layout Styles
+%o-btn--block,
+.o-btn--block {
+  display: block;
+  margin-bottom: $base-spacing-unit;
+}
