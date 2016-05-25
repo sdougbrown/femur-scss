@@ -1,0 +1,29 @@
+// Clip Object
+// Horizontally Centers and Clips The Image
+// Expects that .o-clip has a set max-width
+// works with any display type except `inline`
+
+%o-clip,
+.o-clip {
+  overflow: hidden;
+  text-align: center;
+}
+
+%o-clip__body,
+.o-clip__body {
+  display: block;
+  position: relative;
+  text-align: center;
+  float: left;
+  left: 50%;
+
+  > img {
+    display: inline;
+    position: relative;
+    vertical-align: middle;
+    margin-bottom: -1px;
+    max-width: none;
+    min-width: 1px;
+    right: 50%;
+  }
+}

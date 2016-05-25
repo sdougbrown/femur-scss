@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Femur Demo Page</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/femur.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+  <section class="o-page">
+    <main class="o-container">
+      <div class="o-row" style="padding-top: 3rem">
+        <div class="g g-half@sm g-twothirds@md">
+          <h1>Femur</h1>
+          <p>Hello, welcome to Femur.</p>
+          <p>This page contains some markup that will allow you to experience the built-in styles.</p>
+        </div>
+      </div>
+      <hr/>
+      <h4>Buttons</h4>
+      <p>Intentionally broken at some screen sizes so that you can make some judgement calls based on the benefits and the drawbacks.</p>
+      <div class="o-row">
+        <div class="g g-half g-third@sm g-twenty@md">
+          <span class="o-btn">Default Button</span>
+        </div>
+        <div class="g g-half g-third@sm g-twenty@md">
+          <span class="o-btn o-btn--block">Block Button</span>
+        </div>
+        <div class="g g-half g-third@sm g-twenty@md">
+          <span class="o-btn o-btn--primary o-btn--block">Primary Button</span>
+        </div>
+        <div class="g g-half g-third@sm g-twenty@md">
+          <button>Button Element</button>
+        </div>
+        <div class="g g-half g-third@sm g-twenty@md">
+          <button class="o-btn--primary">Primary Button Element</button>
+        </div>
+      </div>
+      <hr/>
+      <h4>Media Object</h4>
+      <p>It's generally assumed that you'll add your own classes to decorate this kind of layout.  This just handles the basic structure so you don't have to write the same thing over and over and over.</p>
+      <div class="o-row">
+        <div class="g g-whole g-half@md">
+          <div class="o-media">
+            <div class="o-media__img" style="margin-right: 2rem">
+              <img src="images/72cuda.jpg" height="150" />
+            </div>
+            <div class="o-media__body">
+              <h5>Regular Media Object</h5>
+              <p>Content goes here.</p>
+            </div>
+          </div>
+        </div>
+        <div class="g g-whole g-half@md">
+          <div class="o-media o-media--rev">
+            <div class="o-media__img" style="margin-left: 2rem">
+              <img src="images/72cuda.jpg" height="150" />
+            </div>
+            <div class="o-media__body">
+              <h5>Reversed Media Object</h5>
+              <p>Same thing but backwards!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <h4>Clip Object</h4>
+      <p>Allows you to clip images from the middle and hide the overflow without setting them as a background-image.</p>
+      <div class="o-row">
+        <div class="g g-whole g-half@sm g-third@md">
+          <div class="o-clip" style="max-width: 150px">
+            <div class="o-clip__body">
+              <img src="images/72cuda.jpg" height="150" />
+            </div>
+          </div>
+        </div>
+        <div class="g g-whole g-half@sm g-third@md">
+          <div class="o-clip" style="max-width: 200px">
+            <div class="o-clip__body">
+              <img src="images/72cuda.jpg" height="150" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <h4>Form Styles</h4>
+      <form>
+        <legend>Legend<label>Nested Label</label></legend>
+        <fieldset>
+          <label for="textOne">Label</label>
+          <input type="text" name="textOne" placeholder="Text">
+        </fieldset>
+        <fieldset>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset>
+          <label for="number">Number</label>
+          <input type="number" name="number" placeholder="Number">
+        </fieldset>
+        <fieldset>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password">
+        </fieldset>
+        <fieldset>
+          <select placeholder="Select Box">
+            <option value="" disabled="disabled" selected="selected"></option>
+            <option value="One">One</option>
+            <option value="Two">Two</option>
+            <option value="Three">Three</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Textarea"></textarea>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+      <hr/>
+    </main>
+  </section>
+</body>
+</html>

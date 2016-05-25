@@ -1,0 +1,13 @@
+// Horizontal Rules
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$hr-border-width: $base-border-width !default;
+$hr-border-style: $base-border-style !default;
+$hr-border-color: $light-grey !default;
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: $hr-border-width $hr-border-style $hr-border-color;
+}

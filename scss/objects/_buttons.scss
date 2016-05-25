@@ -29,5 +29,7 @@
 %o-btn--block,
 .o-btn--block {
   display: block;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: $base-spacing-unit;
 }

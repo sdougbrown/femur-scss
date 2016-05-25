@@ -1,0 +1,9 @@
+// Page Object
+// Intended to be the immediate child of <body>
+
+.o-page {
+  // do not allow horizontal overflow
+  // beyond this inner wrapper
+  overflow-x: hidden;
+  width: 100%;
+}

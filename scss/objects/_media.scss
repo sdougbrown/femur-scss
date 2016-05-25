@@ -1,0 +1,35 @@
+// Media Object
+// Differs from @stubornella's in that there is no gutter
+// (You always override the gutter anyway let's be honest here.)
+
+%o-media,
+.o-media {
+  @extend %u-cf;
+  display: block;
+}
+
+%o-media__img,
+.o-media__img {
+  float: left;
+
+  > img {
+    display: block;
+  }
+
+  .is-rtl &,
+  %o-media--rev &,
+  .o-media--rev &{
+    float: right;
+  }
+}
+
+%o-media__body,
+.o-media__body {
+  overflow: hidden;
+  display: block;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

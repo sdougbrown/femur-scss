@@ -1,0 +1,16 @@
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$link-hover-color: darken($link-color, 5%) !default;
+$link-focus-color: $link-hover-color !default;
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+  &:focus {
+    color: $link-focus-color;
+  }
+}

@@ -6,28 +6,21 @@
 */
 
 // Core
-@import "vars";
-@import "mixins/base";
+@import "settings";
+@import "mixins/_main";
 
 // Base
 @import "base/normalize";
 @import "base/base-styles";
 @import "base/utils";
+@import "base/spacing";
 @import "base/typography";
 
 // Elements
-// Note: I don't reommend using these blindly.
-@import "elements/buttons";
-@import "elements/forms";
-@import "elements/lists";
-@import "elements/code";
-@import "elements/tables";
-@import "elements/spacing";
+@import "elements/_main";
 
 // Objects
-@import "objects/buttons";
-@import "objects/container";
-@import "objects/row";
+@import "objects/_main";
 
 // Grid
-@import "grids/base";
+@import "grids/_main";

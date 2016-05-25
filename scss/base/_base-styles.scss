@@ -1,7 +1,7 @@
 // Base Styles
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 // NOTE
-// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// html is set to 62.5% so that all the REM measurements
 // are based on 10px sizing. So basically 1.5rem = 15px :)
 
 html {
@@ -14,35 +14,13 @@ body {
   font-weight: $base-font-weight;
   font-family: $base-font-family;
   color: $base-font-color;
-}
 
-// Links
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-$link-hover-color: darken($link-color, 5%) !default;
-$link-focus-color: $link-hover-color !default;
-
-a {
-  color: $link-color;
-
-  &:hover {
-    color: $link-hover-color;
+  @if $body-child-section-overflow == false {
+    > section {
+      // do not allow horizontal overflow
+      // beyond this inner wrapper
+      overflow-x: hidden;
+      width: 100%;
+    }
   }
-  &:focus {
-    color: $link-focus-color;
-  }
-}
-
-// Misc
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-$hr-border-width: $base-border-width !default;
-$hr-border-style: $base-border-style !default;
-$hr-border-color: $light-grey !default;
-
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: $hr-border-width $hr-border-style $hr-border-color;
 }
