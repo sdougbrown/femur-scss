@@ -1,18 +1,18 @@
 {
-  "name": "femur-scss",
+  "name": "skelly-scss",
   "version": "0.1.0",
   "description": "An opinionated enchancement of Skeleton",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sdougbrown/femur-scss"
+    "url": "https://github.com/sdougbrown/skelly-scss"
   },
   "bugs": {
-    "url": "https://github.com/sdougbrown/femur-scss/issues"
+    "url": "https://github.com/sdougbrown/skelly-scss/issues"
   },
-  "homepage": "https://github.com/sdougbrown/femur-scss",
-  "author": "Doug Brown <femur@douggo.com>  (http://douggo.com/)",
+  "homepage": "https://github.com/sdougbrown/skelly-scss",
+  "author": "Doug Brown <skelly@douggo.com>  (http://douggo.com/)",
   "keywords": [
-    "femur",
+    "skelly",
     "skeleton",
     "sass",
     "scss",

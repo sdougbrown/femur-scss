@@ -1,5 +1,5 @@
 /*
-* Femur Grid
+* Skelly Grid
 * Copyright 2016
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
@@ -7,16 +7,33 @@
 
 %g,
 .g {
-  box-sizing: border-box;
-
   @if $grid-float == true {
-    display: block;
-    float: left;
+    @extend %g--f;
   } @else {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
+    @extend %g--i;
   }
+}
+
+%g--f,
+.g--f {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+
+%g--fr,
+.g--fr {
+  box-sizing: border-box;
+  display: block;
+  float: right;
+}
+
+%g--i,
+.g--i {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
 .g-whole {

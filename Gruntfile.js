@@ -6,7 +6,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          "css/femur.css": "scss/femur.scss"
+          "css/skelly.css": "scss/skelly.scss"
         }
       }
     },

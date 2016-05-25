@@ -1,15 +1,15 @@
 {
-  "name": "femur-scss",
+  "name": "skelly-scss",
   "version": "0.1.0",
-  "homepage": "https://github.com/sdougbrown/femur-scss",
+  "homepage": "https://github.com/sdougbrown/skelly-scss",
   "authors": [
-    "Doug Brown <femur@douggo.com>  (http://douggo.com/)",
+    "Doug Brown <skelly@douggo.com>  (http://douggo.com/)",
     "Seth Coelen <scoelen89@gmail.com> (http://SethCoelen.com)"
   ],
   "description": "An opinionated enhancement of Skeleton - responsive boilerplate and sassy best practices",
-  "main": "scss/femur.scss",
+  "main": "scss/skelly.scss",
   "keywords": [
-    "femur",
+    "skelly",
     "skeleton",
     "sass",
     "scss",

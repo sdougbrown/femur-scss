@@ -4,7 +4,9 @@ $input-placeholder-color: $border-color !default;
 $textarea-min-height: 65px !default;
 
 // chrome autofill overrides
-$input-autofill-shadow: 0 0 0 $input-height $input-bg inset;
+$input-autofill-color: $input-color !default;
+$input-autofill-bg: $input-bg !default;
+$input-autofill-shadow: 0 0 0 $input-height $input-autofill-bg inset;
 $input-focus-autofill-shadow: 0 0 0 $input-height $input-focus-bg inset;
 
 textarea,
@@ -79,7 +81,7 @@ legend > label {
 
 :-webkit-autofill {
   -webkit-box-shadow: $input-box-shadow, $input-autofill-shadow;
-  -webkit-text-fill-color: $input-color;
+  -webkit-text-fill-color: $input-autofill-color;
 
   &:focus {
     -webkit-box-shadow: $input-focus-box-shadow, $input-autofill-shadow;
