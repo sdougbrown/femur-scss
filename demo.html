@@ -93,39 +93,54 @@
         </div>
       </div>
       <hr/>
+      <h4>Code Blocks</h4>
+
+      <p>Inline code blocks <code>look like this</code></p>
+      <pre><code>
+Code blocks look like this.
+      </code></pre>
+      <pre><code>
+Super Long Text Overflow:
+https://github.com/sdougbrown/skelly-scss https://github.com/sdougbrown/skelly-scss https://github.com/sdougbrown/skelly-scss https://github.com/sdougbrown/skelly-scss
+      </pre></code>
+      <hr/>
       <h4>Form Styles</h4>
-      <form>
-        <legend>Legend<label>Nested Label</label></legend>
-        <fieldset>
-          <label for="textOne">Label</label>
-          <input type="text" name="textOne" placeholder="Text">
-        </fieldset>
-        <fieldset>
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Email">
-        </fieldset>
-        <fieldset>
-          <label for="number">Number</label>
-          <input type="number" name="number" placeholder="Number">
-        </fieldset>
-        <fieldset>
-          <label for="password">Password</label>
-          <input type="password" name="password" placeholder="Password">
-        </fieldset>
-        <fieldset>
-          <select placeholder="Select Box">
-            <option value="" disabled="disabled" selected="selected"></option>
-            <option value="One">One</option>
-            <option value="Two">Two</option>
-            <option value="Three">Three</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <textarea placeholder="Textarea"></textarea>
-        </fieldset>
-        <fieldset>
-          <input type="submit" value="Submit" />
-        </fieldset>
+      <form class="o-row">
+        <legend class="g g-whole">Legend<label>Nested Label</label></legend>
+        <div class="g g-whole g-half@sm">
+          <fieldset>
+            <label for="textOne">Label</label>
+            <input type="text" name="textOne" placeholder="Text">
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email">
+          </fieldset>
+          <fieldset>
+            <label for="number">Number</label>
+            <input type="number" name="number" placeholder="Number">
+          </fieldset>
+        </div>
+        <div class="g g-whole g-half@sm">
+          <fieldset>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Password">
+          </fieldset>
+          <fieldset>
+            <select placeholder="Select Box">
+              <option value="" disabled="disabled" selected="selected">Select</option>
+              <option value="One">One</option>
+              <option value="Two">Two</option>
+              <option value="Three">Three</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Textarea"></textarea>
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </div>
       </form>
       <hr/>
     </main>

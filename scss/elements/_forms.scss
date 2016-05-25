@@ -12,6 +12,7 @@ $input-focus-autofill-shadow: 0 0 0 $input-height $input-focus-bg inset;
 textarea,
 select {
   @include input();
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

@@ -1,18 +1,31 @@
 // Code
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+$code-bg: $dark-grey !default;
+$code-color: $light-grey !default;
+$code-border-width: $base-border-width !default;
+$code-border-style: $base-border-style !default;
+$code-border-color: darken($dark-grey, 6.4%) !default;
+
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: lighten($light-grey, 6.4%);
-  border: 1px solid $light-grey;
+  color: $code-color;
+  background: $code-bg;
+  border: $code-border-width $code-border-style $code-border-color;
   border-radius: $global-radius;
 }
 
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
+pre {
+  overflow: hidden;
+
+  > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+    overflow: auto;
+  }
 }
+
