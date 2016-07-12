@@ -5,6 +5,8 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
+$grid-float: true !default;
+
 %g,
 .g {
   @if $grid-float == true {
